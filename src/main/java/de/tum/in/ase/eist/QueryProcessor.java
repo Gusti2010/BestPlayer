@@ -2,6 +2,8 @@ package de.tum.in.ase.eist;
 
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
+
 @Service
 public class QueryProcessor {
 
@@ -16,9 +18,12 @@ public class QueryProcessor {
 
 
 
-        } else if(query.contains("+")) {
-            return "hallo bin dumm";
+        } else if(query.contains("plus")) {
+            int res;
+            String[] words = query.split(" ");
+            res = Integer.parseInt(words[4]) + Integer.parseInt(words[2]);
 
+            return "" + res;
         } else {
             return "";
         }
