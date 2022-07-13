@@ -18,6 +18,7 @@ public class QueryProcessor {
 
         } else if(query.contains("+")) {
             return "hallo bin dumm";
+
         } else {
             return "";
         }
