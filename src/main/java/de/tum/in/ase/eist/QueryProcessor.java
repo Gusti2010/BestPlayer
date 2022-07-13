@@ -26,9 +26,18 @@ public class QueryProcessor {
             return String.valueOf(res);
         } else if (query.contains("largest")) {
 
-            String[] words = query.split(" ");
+            String queryString = query;
+            queryString = queryString.replaceAll(",", "");
 
-            return "" + 8;
+            String[] words = queryString.split(" ");
+
+            int res = 0;
+
+            for (int j = 8; j < words.length; j++) {
+                res = Math.max(res, Integer.parseInt(words[j]));
+            }
+
+            return "" + res;
         } else {
             return "";
         }
