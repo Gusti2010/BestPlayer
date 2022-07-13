@@ -21,7 +21,7 @@ public class QueryProcessor {
         } else if(query.contains("plus")) {
             int res;
             String[] words = query.split(" ");
-            res = Integer.parseInt(words[4]) + Integer.parseInt(words[2]);
+            res = Integer.parseInt(words[5]) + Integer.parseInt(words[3]);
 
             return String.valueOf(res);
         } else if (query.contains("largest")) {
