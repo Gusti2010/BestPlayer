@@ -33,7 +33,7 @@ public class QueryProcessor {
 
             int res = 0;
 
-            for (int j = 8; j < words.length; j++) {
+            for (int j = 9; j < words.length; j++) {
                 res = Math.max(res, Integer.parseInt(words[j]));
             }
 
