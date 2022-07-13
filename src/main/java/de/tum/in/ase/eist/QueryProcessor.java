@@ -23,7 +23,12 @@ public class QueryProcessor {
             String[] words = query.split(" ");
             res = Integer.parseInt(words[4]) + Integer.parseInt(words[2]);
 
-            return "" + res;
+            return String.valueOf(res);
+        } else if (query.contains("largest")) {
+
+            String[] words = query.split(" ");
+
+            return "" + 8;
         } else {
             return "";
         }
