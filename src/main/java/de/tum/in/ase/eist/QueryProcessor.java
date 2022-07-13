@@ -37,7 +37,7 @@ public class QueryProcessor {
                 res = Math.max(res, Integer.parseInt(words[j]));
             }
 
-            return "" + res;
+            return String.valueOf(res);
         } else {
             return "";
         }
