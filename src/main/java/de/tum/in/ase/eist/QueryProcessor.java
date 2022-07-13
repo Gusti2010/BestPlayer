@@ -15,7 +15,7 @@ public class QueryProcessor {
            return "Gusti";
 
         } else { // TODO extend the programm here
-            return "";
+            return "30";
         }
     }
 }
